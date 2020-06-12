@@ -5,8 +5,8 @@ import java.io.Serializable;
 public class UtilityClass implements UtilityClassInterface, Serializable {
 
     /*
-    * If your instance can't be overridden by reflection machnism, then don't use static factor method
-    * to implement singleton (i.e. getInstance), rather make instance public and it will make Client code more readable
+    * If your instance can't be overridden by reflection machnism, then don't use static factory method
+    * to implement singleton (i.e. getInstance), rather make instance public because it will make Client code more readable
     * */
     private final UtilityClass instance = new UtilityClass();
 
